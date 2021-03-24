@@ -1,6 +1,6 @@
   :root {
     --color-rose: #eb58b5;
-    --color-ligth-rose:  #f8bee4;
+    --color-ligth-rose:  #f8aed6;
   }
   *{
     margin: 0;
@@ -116,3 +116,43 @@
     border-radius: 20px;
     text-align: center;
   }
+
+  /*======== MODAL ========*/
+  .modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .modal {
+    background-color: #282828;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+  }
+
+  .modal .close-modal {
+    color: white;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+  }
+
+   /*======== MODAL .ACTIVE ========*/
+   .modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+   }
+
+   iframe {
+     width: 100%;
+     height: 90%;
+     position: absolute;
+     top: 5%;
+   }
